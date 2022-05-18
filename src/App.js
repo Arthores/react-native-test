@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Card from './components/Card';
 import fetchKanto from './functions/fecth';
-import fetchPokemon from './functions/unique';
 import './mobile.css';
 
 class App extends Component {
@@ -33,11 +32,16 @@ class App extends Component {
     const { pokemons } = this.state;
     return (
       <div className='body-app'>
-        {/* { pokemons.map((e) => {
+        { pokemons.map((e) => {
           return (
-            <Card name={ e.name } />
+            <Card
+              key={ e.id }  
+              name={ e.name }
+              image={ e.sprites.front_default }
+              body={ e.height }
+            />
           )
-        }) } */}
+        }) }
       </div>
     );
   }

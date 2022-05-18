@@ -8,15 +8,36 @@
 }
 
 .card {
-  width: 26%;
-  height: 10%;
+  width: 45%;
+  height: 30%;
   padding: 2px;
   margin: 2px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ff0043;
+  /* border: 1px solid black; */
   background-color: aliceblue;
 }
+
+.card-name {
+  height: 10%;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-image {
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-body {
+  height: 8%;
+  /* border: 1px solid black; */
+  justify-content: flex-end;
+}
+
 
 @media screen and (min-width: 360px) and (max-width: 414px) {
   .body-app {
@@ -30,17 +51,32 @@
 
   .card {
     width: 45%;
-    height: 10%;
+    height: 30%;
     padding: 2px;
     margin: 2px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ff0043;
+    /* border: 1px solid black; */
     background-color: aliceblue;
   }
 
   .card-name {
-    size: 10px;
-    margin: 2px;
+    height: 10%;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card-image {
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-body {
+    height: 8%;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
   }
 }
