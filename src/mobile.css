@@ -1,0 +1,46 @@
+.body-app {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: aqua;
+}
+
+.card {
+  width: 26%;
+  height: 10%;
+  padding: 2px;
+  margin: 2px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ff0043;
+  background-color: aliceblue;
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px) {
+  .body-app {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #ff0043;
+  }
+
+  .card {
+    width: 45%;
+    height: 10%;
+    padding: 2px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff0043;
+    background-color: aliceblue;
+  }
+
+  .card-name {
+    size: 10px;
+    margin: 2px;
+  }
+}
